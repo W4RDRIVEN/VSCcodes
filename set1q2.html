@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <h1 style="text-align: center; color: maroon;">CHANGE THE BACKGROUNDD</h1>
+    </head>
+
+    <body style="text-align: center; color: chocolate;">
+        <h3>select the colour</h3><br>
+
+        <input type="radio" name="bgcolor" id="blue" value="blue"><br>
+        <input type="radio" name="bgcolor" id="red" value="red"><br>
+        <input type="radio" name="bgcolor" id="orange" value="orange"><br>
+        <input type="radio" name="bgcolor" id="yellow" value="yellow"><br>
+
+        <input type="button" name="submit" value="change" onclick="change()">
+    </body>
+
+    <script>
+
+        function change()
+        {
+            if(document.getElementById("blue").checked)
+         {document.bgColor = "blue";}
+
+            else if(document.getElementById("red").checked)
+        {document.bgColor = "red"}
+
+            else if(document.getElementById("orange").checked)
+        {document.bgColor = "orange"}
+
+            else if(document.getElementById("yellow").checked)
+        {document.bgColor = "yellow"}
+        }
+    </script>
+</html>

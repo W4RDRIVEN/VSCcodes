@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <style type="text/css" media="all">
+            body{background-color:rgb(89, 211, 219); text-align: center;}
+            h2{color: orangered; margin-left: 50px;}
+        </style>
+    </head>
+
+    <body>
+        <h2>Javascript loops</h2>
+        <p>a loop with a <b>continue</b> statement</p>
+
+        <p id="demo"></p>
+
+        <script>
+            let text="";
+
+            for(let i=0;i<=10;i++)
+            {if(i===3){continue;} text+= "the number is " + i + "<br>";}
+
+            document.getElementById("demo").innerHTML=text;
+        </script>
+    </body>
+</html>
